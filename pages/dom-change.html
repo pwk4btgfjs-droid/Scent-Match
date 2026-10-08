@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+   <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+> 
+    <title>DOM — изменение данных</title>
+    <link
+    rel="stylesheet"
+    href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+       <a href="../index.html">
+    <img
+        src="../images/scent-match-logo.png"
+        alt="Scent Match"
+        width="220">
+</a> 
+
+        <nav aria-label="Основная навигация">
+            <a href="../index.html">Главная</a>
+            <a href="notes.html#top">
+                Ноты
+            </a>
+            <a href="catalog.html">Подборки</a>
+            <a href="compare.html">Сравнение</a>
+            <a href="finder.html">Подбор аромата</a>
+            <a href="contact.html">Контакты</a>
+            <a href="algorithm.html">
+                Учебный раздел
+            </a>
+        </nav>
+
+        <nav aria-label="Учебная навигация">
+            <a href="dom-read.html">Чтение данных</a>
+            <a href="dom-change.html" aria-current="page">Изменение данных</a>
+            <a href="algorithm.html">Алгоритмическая задача</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1>Изменение кириллических данных на латиницу</h1>
+
+        <p>
+            Все данные являются вымышленными!
+        </p>
+
+        <section>
+
+    <h3>Страница 2</h3>
+
+    <p>
+        Паспорт выдан:
+        <span id="issuer">
+            ГУ МВД РОССИИ ПО Г. МОСКВЕ
+        </span>
+    </p>
+
+    <p>
+        Дата выдачи:
+        <span>07.07.2022</span>
+    </p>
+
+    <p>
+        Код подразделения:
+        <span>777-777</span>
+    </p>
+
+</section>
+
+        <section>
+
+            <h3>Страница 3</h3>
+
+            <p>
+                Фамилия:
+                <span id="surname">Белова</span>
+            </p>
+
+            <p>
+                Имя:
+                <span id="name">Полина</span>
+            </p>
+
+            <p>
+                Отчество:
+                <span id="patronymic">Андреевна</span>
+            </p>
+
+            <p>
+                Дата рождения:
+                <span>07.07.2007</span>
+            </p>
+
+            <p>
+                Место рождения:
+                <span id="birthplace">Москва</span>
+            </p>
+
+        </section>
+
+
+        <button type="button" id="change-data">
+            Изменить данные на латиницу
+        </button>
+
+    </main>
+
+<script>
+
+    let latin = false;
+
+    const changeButton =
+        document.getElementById("change-data");
+
+    changeButton.onclick = function () {
+
+        if (!latin) {
+
+            document.getElementById("issuer").textContent =
+                "GU MVD ROSSII PO G. MOSKVE";
+
+            document.getElementById("surname").textContent =
+                "Belova";
+
+            document.getElementById("name").textContent =
+                "Polina";
+
+            document.getElementById("patronymic").textContent =
+                "Andreevna";
+
+            document.getElementById("birthplace").textContent =
+                "Moskva";
+
+            changeButton.textContent =
+                "Вернуть данные на кириллицу";
+
+            latin = true;
+
+        } else {
+
+            document.getElementById("issuer").textContent =
+                "ГУ МВД РОССИИ ПО Г. МОСКВЕ";
+
+            document.getElementById("surname").textContent =
+                "Белова";
+
+            document.getElementById("name").textContent =
+                "Полина";
+
+            document.getElementById("patronymic").textContent =
+                "Андреевна";
+
+            document.getElementById("birthplace").textContent =
+                "Москва";
+
+            changeButton.textContent =
+                "Изменить данные на латиницу";
+
+            latin = false;
+
+        }
+
+    };
+
+</script>
+    
+
+</body>
+
+</html>

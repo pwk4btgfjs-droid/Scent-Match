@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Контакты — Scent Match</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+
+            <img
+                src="../images/scent-match-logo.png"
+                alt="Scent Match"
+                width="220"
+            >
+
+        </a>
+
+
+        <nav aria-label="Основная навигация">
+
+            <a href="../index.html">
+                Главная
+            </a>
+
+            <a href="notes.html#top">
+                Ноты
+            </a>
+
+            <a href="catalog.html">
+                Подборки
+            </a>
+
+            <a href="compare.html">
+                Сравнение
+            </a>
+
+            <a href="finder.html">
+                Подбор аромата
+            </a>
+
+            <a
+                href="contact.html"
+                aria-current="page"
+            >
+                Контакты
+            </a>
+
+            <a href="algorithm.html">
+                Учебный раздел
+            </a>
+        </nav>
+
+    </header>
+
+
+
+    <main class="contact-page">
+
+
+        <!-- HERO -->
+
+        <section class="contact-hero">
+
+            <h1>
+                Обратная связь
+            </h1>
+
+            <p>
+                Есть вопрос, предложение или аромат,
+                который стоит добавить в Scent Match?
+                Отправь сообщение через форму.
+            </p>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section class="contact-content">
+
+
+            <div class="contact-info">
+
+
+                <h2>
+                    Tell us what you think.
+                </h2>
+
+            </div>
+
+
+
+            <form
+                class="contact-form"
+                action="https://httpbin.org/post"
+                method="post"
+            >
+
+
+                <div class="contact-form-grid">
+
+
+                    <p>
+
+                        <label for="surname">
+                            Фамилия
+                        </label>
+
+                        <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            required
+                        >
+
+                    </p>
+
+
+
+                    <p>
+
+                        <label for="name">
+                            Имя
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+
+                    </p>
+
+
+
+                    <p>
+
+                        <label for="group">
+                            Учебная группа
+                        </label>
+
+                        <input
+                            type="text"
+                            id="group"
+                            name="group"
+                            required
+                        >
+
+                    </p>
+
+
+
+                    <p>
+
+                        <label for="phone">
+                            Мобильный телефон
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7 999 000 00 00"
+                            required
+                        >
+
+                    </p>
+
+
+
+                    <p>
+
+                        <label for="email">
+                            Электронная почта
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+
+                    </p>
+
+
+
+                    <p>
+
+                        <label for="message-date">
+                            Дата обращения
+                        </label>
+
+                        <input
+                            type="date"
+                            id="message-date"
+                            name="message_date"
+                            required
+                        >
+
+                    </p>
+
+
+                </div>
+
+
+
+                <p>
+
+                    <label for="subject">
+                        Тема обращения
+                    </label>
+
+                    <select
+                        id="subject"
+                        name="subject"
+                        required
+                    >
+
+                        <option
+                            value=""
+                            disabled
+                            selected
+                        >
+                            Выберите тему
+                        </option>
+
+                        <option value="question">
+                            Вопрос о работе сервиса
+                        </option>
+
+                        <option value="perfume">
+                            Предложить аромат для подборок
+                        </option>
+
+                        <option value="feedback">
+                            Отзыв о Scent Match
+                        </option>
+
+                        <option value="other">
+                            Другое
+                        </option>
+
+                    </select>
+
+                </p>
+
+
+
+                <p>
+
+                    <label for="message">
+                        Сообщение
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Напишите ваше сообщение..."
+                        required
+                    ></textarea>
+
+                </p>
+
+
+
+                <input
+                    type="hidden"
+                    name="form_type"
+                    value="contact"
+                >
+
+
+
+                <div class="contact-submit">
+
+                    <button type="submit">
+                        Отправить сообщение
+                    </button>
+
+                </div>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+</html>

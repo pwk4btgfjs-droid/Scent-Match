@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Сравнение — Scent Match</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+
+            <img
+                src="../images/scent-match-logo.png"
+                alt="Scent Match"
+                width="220"
+            >
+
+        </a>
+
+
+        <nav aria-label="Основная навигация">
+
+            <a href="../index.html">
+                Главная
+            </a>
+
+            <a href="notes.html#top">
+                Ноты
+            </a>
+
+            <a href="catalog.html">
+                Подборки
+            </a>
+
+            <a
+                href="compare.html"
+                aria-current="page"
+            >
+                Сравнение
+            </a>
+
+            <a href="finder.html">
+                Подбор аромата
+            </a>
+
+            <a href="contact.html">
+                Контакты
+            </a>
+
+            <a href="algorithm.html">
+                Учебный раздел
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="compare-page">
+
+
+        <!-- HERO -->
+
+        <section class="compare-hero">
+
+            <h1>
+                Сравнение ароматов
+            </h1>
+
+            <p>
+                Выбери два аромата и сравни их ноты,
+                характер и парфюмерное направление.
+            </p>
+
+        </section>
+
+
+
+        <!-- SELECTORS -->
+
+        <section class="compare-selector">
+
+            <div class="compare-select-block">
+
+                <label for="perfume-one">
+                    Первый аромат
+                </label>
+
+                <select id="perfume-one">
+                </select>
+
+            </div>
+
+
+            <div class="compare-versus">
+                VS
+            </div>
+
+
+            <div class="compare-select-block">
+
+                <label for="perfume-two">
+                    Второй аромат
+                </label>
+
+                <select id="perfume-two">
+                </select>
+
+            </div>
+
+        </section>
+
+
+
+        <p
+            id="compare-message"
+            class="compare-message"
+            aria-live="polite"
+        ></p>
+
+
+
+        <!-- VISUAL -->
+
+        <section class="compare-visual">
+
+            <article class="compare-perfume">
+
+                <div class="compare-image">
+
+                    <img
+                        id="compare-image-one"
+                        src=""
+                        alt=""
+                    >
+
+                </div>
+
+                <p
+                    id="compare-brand-one"
+                    class="compare-brand"
+                ></p>
+
+                <h2 id="compare-name-one"></h2>
+
+            </article>
+
+
+
+            <div class="compare-divider">
+                VS
+            </div>
+
+
+
+            <article class="compare-perfume">
+
+                <div class="compare-image">
+
+                    <img
+                        id="compare-image-two"
+                        src=""
+                        alt=""
+                    >
+
+                </div>
+
+                <p
+                    id="compare-brand-two"
+                    class="compare-brand"
+                ></p>
+
+                <h2 id="compare-name-two"></h2>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- TABLE -->
+
+        <section class="compare-details">
+
+            <h2>
+                Детальное сравнение
+            </h2>
+
+
+            <div class="compare-table-wrapper">
+
+                <table class="compare-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Характеристика
+                            </th>
+
+                            <th id="table-name-one">
+                                Аромат 1
+                            </th>
+
+                            <th id="table-name-two">
+                                Аромат 2
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr class="compare-image-row">
+
+                            <th>
+                                Флакон
+                            </th>
+
+                            <td>
+
+                                <a
+                                    id="table-image-link-one"
+                                    class="compare-table-image-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <img
+                                        id="table-image-one"
+                                        class="compare-table-image"
+                                        src=""
+                                        alt=""
+                                    >
+
+                                    <span>
+                                        Открыть изображение ↗
+                                    </span>
+
+                                </a>
+
+                            </td>
+
+
+                            <td>
+
+                                <a
+                                    id="table-image-link-two"
+                                    class="compare-table-image-link"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <img
+                                        id="table-image-two"
+                                        class="compare-table-image"
+                                        src=""
+                                        alt=""
+                                    >
+
+                                    <span>
+                                        Открыть изображение ↗
+                                    </span>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <th>
+                                Бренд
+                            </th>
+
+                            <td id="compare-table-brand-one"></td>
+
+                            <td id="compare-table-brand-two"></td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <th>
+                                Парфюмерные направления
+                            </th>
+
+                            <td id="compare-family-one"></td>
+
+                            <td id="compare-family-two"></td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <th>
+                                Основные ноты
+                            </th>
+
+                            <td id="compare-notes-one"></td>
+
+                            <td id="compare-notes-two"></td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <th>
+                                Характер
+                            </th>
+
+                            <td id="compare-moods-one"></td>
+
+                            <td id="compare-moods-two"></td>
+
+                        </tr>
+
+
+
+                        <tr class="compare-common-row">
+
+                            <th>
+                                Общие ноты
+                            </th>
+
+                            <td
+                                id="compare-common-notes"
+                                colspan="2"
+                            ></td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <th>
+                                Отличительные ноты
+                            </th>
+
+                            <td id="compare-unique-one"></td>
+
+                            <td id="compare-unique-two"></td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="../js/perfumes.js"></script>
+    <script src="../js/compare.js"></script>
+
+</body>
+
+</html>

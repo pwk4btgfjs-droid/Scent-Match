@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Подбор аромата — Scent Match</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+            <img
+                src="../images/scent-match-logo.png"
+                alt="Scent Match"
+                width="220"
+            >
+        </a>
+
+
+        <nav aria-label="Основная навигация">
+
+            <a href="../index.html">
+                Главная
+            </a>
+
+            <a href="notes.html#top">
+                Ноты
+            </a>
+
+            <a href="catalog.html">
+                Подборки
+            </a>
+
+            <a href="compare.html">
+                Сравнение
+            </a>
+
+            <a
+                href="finder.html"
+                aria-current="page"
+            >
+                Подбор аромата
+            </a>
+
+            <a href="contact.html">
+                Контакты
+            </a>
+
+            <a href="algorithm.html">
+                Учебный раздел
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="finder-page">
+
+
+        <!-- HERO -->
+
+        <section class="finder-hero">
+
+            <h1>
+                Найди свой аромат
+            </h1>
+
+            <p class="finder-intro">
+                Выбери настроение и любимые ноты.
+                Scent Match сравнит твои предпочтения
+                с ароматами из коллекции и покажет
+                наиболее близкие совпадения.
+            </p>
+
+        </section>
+
+
+
+        <!-- FORM -->
+
+        <form
+            id="finder-form"
+            class="finder-form"
+            action="https://httpbin.org/post"
+            method="post"
+        >
+
+
+            <!-- STEP 01 -->
+
+            <div class="finder-step">
+
+                <div class="finder-step-heading">
+
+                    <div>
+                    
+
+                        <h2>
+                            Какое настроение ты ищешь?
+                        </h2>
+
+                        <p>
+                            Можно выбрать несколько вариантов.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="finder-options">
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="свежий"
+                        >
+                        <span>Свежий</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="чистый"
+                        >
+                        <span>Чистый</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="мягкий"
+                        >
+                        <span>Мягкий</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="тёплый"
+                        >
+                        <span>Тёплый</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="сладкий"
+                        >
+                        <span>Сладкий</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="спокойный"
+                        >
+                        <span>Спокойный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="воздушный"
+                        >
+                        <span>Воздушный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="яркий"
+                        >
+                        <span>Яркий</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="тёмный"
+                        >
+                        <span>Тёмный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="дымный"
+                        >
+                        <span>Дымный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="вечерний"
+                        >
+                        <span>Вечерний</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="зелёный"
+                        >
+                        <span>Зелёный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="насыщенный"
+                        >
+                        <span>Насыщенный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="солнечный"
+                        >
+                        <span>Солнечный</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="mood"
+                            value="пудровый"
+                        >
+                        <span>Пудровый</span>
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 02 -->
+
+            <div class="finder-step">
+
+                <div class="finder-step-heading">
+
+                    <div>
+
+                        <h2>
+                            Какие ноты тебе нравятся?
+                        </h2>
+
+                        <p>
+                            Выбери те, которые хотелось бы
+                            почувствовать в аромате.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="finder-options finder-notes">
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="бергамот"
+                        >
+                        <span>Бергамот</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="мускус"
+                        >
+                        <span>Мускус</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="ваниль"
+                        >
+                        <span>Ваниль</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="жасмин"
+                        >
+                        <span>Жасмин</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="роза"
+                        >
+                        <span>Роза</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="сандал"
+                        >
+                        <span>Сандал</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="кедр"
+                        >
+                        <span>Кедр</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="ветивер"
+                        >
+                        <span>Ветивер</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="кардамон"
+                        >
+                        <span>Кардамон</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="чёрный чай"
+                        >
+                        <span>Чёрный чай</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="матча"
+                        >
+                        <span>Матча</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="зелёный чай"
+                        >
+                        <span>Зелёный чай</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="инжир"
+                        >
+                        <span>Инжир</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="личи"
+                        >
+                        <span>Личи</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="груша"
+                        >
+                        <span>Груша</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="вишня"
+                        >
+                        <span>Вишня</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="ананас"
+                        >
+                        <span>Ананас</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="ирис"
+                        >
+                        <span>Ирис</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="уд"
+                        >
+                        <span>Уд</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="кожа"
+                        >
+                        <span>Кожа</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="ладан"
+                        >
+                        <span>Ладан</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="табак"
+                        >
+                        <span>Табак</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="шафран"
+                        >
+                        <span>Шафран</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="мёд"
+                        >
+                        <span>Мёд</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="кофе"
+                        >
+                        <span>Кофе</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="карамель"
+                        >
+                        <span>Карамель</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="флердоранж"
+                        >
+                        <span>Флердоранж</span>
+                    </label>
+
+
+                    <label class="finder-option">
+                        <input
+                            type="checkbox"
+                            name="notes"
+                            value="морские ноты"
+                        >
+                        <span>Морские ноты</span>
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STEP 03 -->
+
+            <div class="finder-step">
+
+                <div class="finder-step-heading">
+
+                    <div>
+
+                        <h2>
+                            Как аромат должен ощущаться?
+                        </h2>
+
+                        <p>
+                            Эти параметры помогут уточнить результат.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <fieldset class="finder-fieldset">
+
+                    <legend>
+                        Проекция
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="projection"
+                            value="intimate"
+                        >
+
+                        Близко к коже
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="projection"
+                            value="moderate"
+                            checked
+                        >
+
+                        Умеренная
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="projection"
+                            value="strong"
+                        >
+
+                        Выраженная
+
+                    </label>
+
+                </fieldset>
+
+
+
+                <fieldset class="finder-fieldset">
+
+                    <legend>
+                        Шлейф
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="sillage"
+                            value="minimal"
+                        >
+
+                        Минимальный
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="sillage"
+                            value="moderate"
+                            checked
+                        >
+
+                        Умеренный
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="sillage"
+                            value="pronounced"
+                        >
+
+                        Выраженный
+
+                    </label>
+
+                </fieldset>
+
+            </div>
+
+
+
+            <!-- ADDITIONAL PARAMETERS -->
+
+            <details class="finder-extra">
+
+                <summary>
+                    Параметры подбора 
+                </summary>
+
+                <div class="finder-extra-grid">
+
+
+                    <p>
+
+                        <label for="user-name">
+                            Ваше имя
+                        </label>
+
+                        <input
+                            type="text"
+                            id="user-name"
+                            name="user_name"
+                            value="Гость"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="result-number">
+                            Количество результатов
+                        </label>
+
+                        <input
+                            type="number"
+                            id="result-number"
+                            name="result_number"
+                            value="3"
+                            min="1"
+                            max="5"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="date">
+                            Дата подбора
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="selection_date"
+                        >
+
+                    </p>
+
+
+                    <p>
+
+                        <label for="access-code">
+                            Код для сохранения результата
+                        </label>
+
+                        <input
+                            type="password"
+                            id="access-code"
+                            name="access_code"
+                        >
+
+                    </p>
+
+
+                </div>
+
+            </details>
+
+
+
+            <input
+                type="hidden"
+                name="form_type"
+                value="perfume_finder"
+            >
+
+
+
+            <div class="finder-submit">
+
+                <button type="submit">
+                    Найти мой аромат
+                </button>
+
+                <p
+                    id="finder-message"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+
+        </form>
+
+
+
+        <!-- RESULTS -->
+
+        <section
+            id="finder-results"
+            class="finder-results"
+            hidden
+        >
+
+            <h2>
+                Твои совпадения
+            </h2>
+
+            <p class="finder-results-intro">
+                Ароматы, которые лучше всего совпадают
+                с выбранными предпочтениями.
+            </p>
+
+
+            <div
+                id="finder-results-grid"
+                class="finder-results-grid"
+            ></div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="../js/perfumes.js"></script>
+    <script src="../js/finder.js"></script>
+
+</body>
+
+</html>

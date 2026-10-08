@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+    <title>Решение алгоритмической задачи</title>
+    <link
+    rel="stylesheet"
+    href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+    <img
+        src="../images/scent-match-logo.png"
+        alt="Scent Match"
+        width="220">
+</a>
+
+        <nav aria-label="Основная навигация"> 
+            <a href="../index.html">Главная</a>
+            <a href="notes.html#top">
+                Ноты
+            </a>
+            <a href="catalog.html">Подборки</a>
+            <a href="compare.html">Сравнение</a>
+            <a href="finder.html">Подбор аромата</a>
+            <a href="contact.html">Контакты</a>
+            <a
+               href="algorithm.html"
+               aria-current="page"
+            >
+               Учебный раздел
+            </a>
+        </nav>
+
+        <nav aria-label="Учебная навигация">
+            <a href="dom-read.html">Чтение данных</a>
+            <a href="dom-change.html">Изменение данных</a>
+            <a href="algorithm.html" aria-current="page">
+                Алгоритмическая задача
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Решение алгоритмической задачи №1007</h1>
+
+        <section>
+
+            <h3>Условие задачи</h3>
+
+            <p>
+                Имеются две ёмкости:
+                кубическая с ребром A и цилиндрическая
+                с высотой H и радиусом основания R.
+            </p>
+
+            <p>
+                Необходимо определить, поместится ли жидкость
+                объёмом M в первую ёмкость, во вторую,
+                в обе ёмкости или ни в одну из них.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h3>Введите исходные данные</h3>
+
+            <p>
+                <label for="a">
+                    Ребро кубической ёмкости A:
+                </label>
+
+                <input
+                    type="number"
+                    id="a"
+                    min="0"
+                    step="any">
+            </p>
+
+
+            <p>
+                <label for="h">
+                    Высота цилиндрической ёмкости H:
+                </label>
+
+                <input
+                    type="number"
+                    id="h"
+                    min="0"
+                    step="any">
+            </p>
+
+
+            <p>
+                <label for="r">
+                    Радиус цилиндрической ёмкости R:
+                </label>
+
+                <input
+                    type="number"
+                    id="r"
+                    min="0"
+                    step="any">
+            </p>
+
+
+            <p>
+                <label for="m">
+                    Объём жидкости M:
+                </label>
+
+                <input
+                    type="number"
+                    id="m"
+                    min="0"
+                    step="any">
+            </p>
+
+
+            <button type="button" id="solve">
+                Решить задачу
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h3>Результат</h3>
+
+            <p id="cube-volume">
+                Объём кубической ёмкости:
+            </p>
+
+            <p id="cylinder-volume">
+                Объём цилиндрической ёмкости:
+            </p>
+
+            <p
+                id="result"
+                aria-live="polite"
+            >
+                Здесь появится результат.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/algorithm.js"></script>
+
+</body>
+
+</html>

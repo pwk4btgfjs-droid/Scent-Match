@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ноты — Scent Match</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <a href="../index.html">
+
+            <img
+                src="../images/scent-match-logo.png"
+                alt="Scent Match"
+                width="220"
+            >
+
+        </a>
+
+
+        <nav aria-label="Основная навигация">
+
+            <a href="../index.html">
+                Главная
+            </a>
+
+            <a
+             href="notes.html#top"
+             aria-current="page"
+            >
+                Ноты
+            </a>
+
+            <a href="catalog.html">
+                Подборки
+            </a>
+
+            <a href="compare.html">
+                Сравнение
+            </a>
+
+            <a href="finder.html">
+                Подбор аромата
+            </a>
+
+            <a href="contact.html">
+                Контакты
+            </a>
+
+            <a href="algorithm.html">
+                Учебный раздел
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <main class="notes-page">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section
+            class="notes-hero"
+            id="top"
+        >
+
+            <h1>
+                Парфюмерные
+                <em>ноты.</em>
+            </h1>
+
+
+            <div class="notes-hero-bottom">
+
+                <p class="notes-intro">
+                    Исследуй парфюмерные ноты и находи ароматы,
+                    в которых они раскрываются.
+                    Выбери интересующую ноту —
+                    Scent Match покажет подходящие композиции.
+                </p>
+
+
+                <p class="notes-reference">
+
+                    Подробнее о нотах и композициях —
+
+                    <a
+                        href="https://www.fragrantica.ru/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Fragrantica ↗
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+<!-- =====================================================
+     NAVIGATION
+====================================================== -->
+
+<section class="notes-navigation">
+
+    <div>
+
+        <h2>
+            Группы нот
+        </h2>
+
+        <nav class="notes-index-nav"
+             aria-label="Навигация по группам нот"
+        >
+
+            <a href="#citrus">
+                Цитрусовые
+            </a>
+
+            <a href="#green">
+                Зелёные
+            </a>
+
+            <a href="#floral">
+                Цветочные
+            </a>
+
+            <a href="#fruity">
+                Фруктовые
+            </a>
+
+            <a href="#woody">
+                Древесные
+            </a>
+
+            <a href="#spicy">
+                Пряные
+            </a>
+
+            <a href="#gourmand">
+                Гурманские
+            </a>
+
+            <a href="#amber">
+                Амбровые и мускусные
+            </a>
+
+            <a href="#dark">
+                Тёмные и дымные
+            </a>
+
+        </nav>
+
+    </div>
+
+</section>
+       
+
+
+
+        <!-- =====================================================
+             RESULTS
+        ====================================================== -->
+
+        <section
+            id="note-results"
+            class="note-results"
+            hidden
+        >
+
+            <div class="note-results-header">
+
+                <div>
+
+                    <h2 id="note-results-title">
+                        Ароматы с выбранной нотой
+                    </h2>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="clear-note-filter"
+                    class="note-clear-button"
+                >
+                    Сбросить
+                </button>
+
+            </div>
+
+
+            <p
+               id="note-results-message"
+               class="note-results-message"
+               aria-live="polite"
+            ></p>
+
+
+            <div
+                id="note-results-grid"
+                class="note-results-grid"
+            ></div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CITRUS
+        ====================================================== -->
+
+        <section
+            id="citrus"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Цитрусовые
+                    </h2>
+
+                    <p>
+                        Свежие и яркие ноты,
+                        которые добавляют композиции
+                        лёгкость, энергию и чистоту.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Бергамот</li>
+
+                    <li>Лимон</li>
+
+                    <li>Мандарин</li>
+
+                    <li>Грейпфрут</li>
+
+                    <li>Апельсин</li>
+
+                    <li>Нероли</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GREEN
+        ====================================================== -->
+
+        <section
+            id="green"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Зелёные
+                    </h2>
+
+                    <p>
+                        Чайные, травянистые и прохладные ноты,
+                        создающие ощущение воздуха,
+                        зелени и свежести.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Зелёный чай</li>
+
+                    <li>Чёрный чай</li>
+
+                    <li>Матча</li>
+
+                    <li>Улун</li>
+
+                    <li>Мята</li>
+
+                    <li>Лаванда</li>
+
+                    <li>Шалфей</li>
+
+                    <li>Можжевельник</li>
+
+                    <li>Зелёные ноты</li>
+
+                    <li>Морские ноты</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FLORAL
+        ====================================================== -->
+
+        <section
+            id="floral"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Цветочные
+                    </h2>
+
+                    <p>
+                        От прозрачных и нежных
+                        до насыщенных и кремовых —
+                        одна из самых разнообразных
+                        групп в парфюмерии.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Роза</li>
+
+                    <li>Жасмин</li>
+
+                    <li>Ирис</li>
+
+                    <li>Тубероза</li>
+
+                    <li>Флердоранж</li>
+
+                    <li>Пион</li>
+
+                    <li>Фиалка</li>
+
+                    <li>Магнолия</li>
+
+                    <li>Османтус</li>
+
+                    <li>Нарцисс</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FRUITY
+        ====================================================== -->
+
+        <section
+            id="fruity"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Фруктовые
+                    </h2>
+
+                    <p>
+                        Сочные акценты,
+                        которые могут добавить композиции
+                        сладость, свежесть
+                        или лёгкую кислинку.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Груша</li>
+
+                    <li>Персик</li>
+
+                    <li>Чёрная смородина</li>
+
+                    <li>Инжир</li>
+
+                    <li>Вишня</li>
+
+                    <li>Личи</li>
+
+                    <li>Яблоко</li>
+
+                    <li>Манго</li>
+
+                    <li>Ананас</li>
+
+                    <li>Ревень</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             WOODY
+        ====================================================== -->
+
+        <section
+            id="woody"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Древесные
+                    </h2>
+
+                    <p>
+                        Сухие, тёплые и глубокие ноты,
+                        которые часто формируют
+                        основу и структуру аромата.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Сандал</li>
+
+                    <li>Кедр</li>
+
+                    <li>Ветивер</li>
+
+                    <li>Уд</li>
+
+                    <li>Пачули</li>
+
+                    <li>Сосна</li>
+
+                    <li>Берёза</li>
+
+                    <li>Амирис</li>
+
+                    <li>Мох</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SPICY
+        ====================================================== -->
+
+        <section
+            id="spicy"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Пряные
+                    </h2>
+
+                    <p>
+                        Тёплые и пикантные акценты,
+                        которые добавляют композиции
+                        характер, глубину и контраст.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Кардамон</li>
+
+                    <li>Корица</li>
+
+                    <li>Розовый перец</li>
+
+                    <li>Гвоздика</li>
+
+                    <li>Имбирь</li>
+
+                    <li>Шафран</li>
+
+                    <li>Кориандр</li>
+
+                    <li>Мускатный орех</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             GOURMAND
+        ====================================================== -->
+
+        <section
+            id="gourmand"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Гурманские
+                    </h2>
+
+                    <p>
+                        Ноты с тёплым,
+                        сладким и обволакивающим звучанием —
+                        от ванили до кофе и мёда.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Ваниль</li>
+
+                    <li>Мёд</li>
+
+                    <li>Карамель</li>
+
+                    <li>Кофе</li>
+
+                    <li>Какао</li>
+
+                    <li>Кокос</li>
+
+                    <li>Молочные ноты</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             AMBER / MUSK
+        ====================================================== -->
+
+        <section
+            id="amber"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Амбровые и мускусные
+                    </h2>
+
+                    <p>
+                        Мягкие и глубокие базовые ноты,
+                        которые придают аромату
+                        тепло, объём и стойкость.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Амбра</li>
+
+                    <li>Мускус</li>
+
+                    <li>Амбретта</li>
+
+                    <li>Бензоин</li>
+
+                    <li>Лабданум</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             DARK / SMOKY
+        ====================================================== -->
+
+        <section
+            id="dark"
+            class="note-group"
+        >
+
+            <div class="note-group-heading">
+
+                <div>
+
+                    <h2>
+                        Тёмные и дымные
+                    </h2>
+
+                    <p>
+                        Кожа, табак, смолы и дымные акценты —
+                        для более глубоких,
+                        выразительных и вечерних композиций.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="note-group-content">
+
+                <ul class="note-list">
+
+                    <li>Кожа</li>
+
+                    <li>Табак</li>
+
+                    <li>Ладан</li>
+
+                    <li>Уд</li>
+
+                    <li>Бензоин</li>
+
+                    <li>Лабданум</li>
+
+                </ul>
+
+            </div>
+
+
+            <a
+                href="#top"
+                class="note-back"
+            >
+                Наверх ↑
+            </a>
+
+        </section>
+
+<!-- =====================================================
+     FRAGRANCE STRUCTURE
+====================================================== -->
+
+<section class="fragrance-structure">
+
+    <div class="fragrance-structure-heading">
+
+        <h2>
+            Как раскрывается аромат
+        </h2>
+
+        <p>
+            Парфюмерная композиция обычно раскрывается
+            постепенно — от первых ярких акцентов
+            к более глубоким и стойким нотам.
+        </p>
+
+    </div>
+
+
+    <ol class="fragrance-structure-list">
+
+        <li>
+
+            <h3>
+                Верхние ноты
+            </h3>
+
+            <p>
+                Первое впечатление от аромата.
+            </p>
+
+            <ul>
+                <li>Бергамот</li>
+                <li>Лимон</li>
+                <li>Мандарин</li>
+            </ul>
+
+        </li>
+
+
+        <li>
+
+            <h3>
+                Ноты сердца
+            </h3>
+
+            <p>
+                Основной характер композиции.
+            </p>
+
+            <ul>
+                <li>Роза</li>
+                <li>Жасмин</li>
+                <li>Ирис</li>
+            </ul>
+
+        </li>
+
+
+        <li>
+
+            <h3>
+                Базовые ноты
+            </h3>
+
+            <p>
+                Самая глубокая и стойкая часть аромата.
+            </p>
+
+            <ul>
+                <li>Мускус</li>
+                <li>Сандал</li>
+                <li>Амбра</li>
+            </ul>
+
+        </li>
+
+    </ol>
+
+</section>
+
+    </main>
+
+
+
+    <script src="../js/perfumes.js"></script>
+
+    <script src="../js/notes.js"></script>
+
+
+</body>
+
+</html>
